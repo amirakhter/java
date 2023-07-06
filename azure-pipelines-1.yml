@@ -1,3 +1,6 @@
+trigger:
+- master
+
 pool:
   vmImage: 'ubuntu-latest'
 stages:
@@ -5,9 +8,7 @@ stages:
   jobs:
     - job: firstjob
       steps:
-      - bash: echo Build First trigger:
-- master
-Job
+      - bash: echo Build First Job
     - job: SecondJob
       steps:
       - bash: echo Build Second Job
